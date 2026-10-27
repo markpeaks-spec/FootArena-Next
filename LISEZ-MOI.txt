@@ -1,0 +1,25 @@
+FOOTARENA — VERSION NEXT
+
+Contenu :
+- index.html : interface du site
+- quiz-bank.js : banque locale de 120 questions de football réparties en 12 niveaux, avec explications et indices
+- netlify/functions/matches.mjs : scores, classements et buteurs via Football-Data.org
+- netlify/functions/news.mjs : flux Google Actualités RSS pour actualités, Ballon d'Or, blessures, transferts et Ligue 1
+- netlify.toml : configuration Netlify Functions
+
+IMPORTANT
+1. La clé FOOTBALL_DATA_TOKEN doit être définie dans les variables d'environnement du projet Netlify.
+2. Ne mettez jamais le jeton directement dans index.html et ne le partagez pas.
+3. Cette version utilise des fonctions Netlify : un simple glisser-déposer du seul fichier HTML ne suffit pas. Déployez le dossier du projet via Git ou Netlify CLI, ou suivez les instructions de déploiement du projet.
+4. Les compétitions accessibles dépendent de l'offre Football-Data.org. Les flux d'actualités dépendent de la disponibilité de Google Actualités RSS.
+5. Les articles de presse sont des liens externes ; les informations médicales doivent être vérifiées auprès de la source et du club. Aucune blessure ou date de retour n'est inventée.
+
+QUIZ ARENA
+- 120 questions historiques et règles du jeu en 12 niveaux (10 questions par niveau).
+- Les niveaux avancés se débloquent avec l’XP gagnée. Le score et la progression sont enregistrés dans le navigateur utilisé.
+- Les questions de culture générale sont volontairement basées sur des faits stables ; les actualités récentes restent dans Le Vestiaire et doivent être vérifiées à partir des articles liés.
+
+SOURCES DE RÉFÉRENCE
+- Football-Data.org API v4 : https://www.football-data.org/documentation/quickstart
+- Palmarès officiel du Ballon d’Or (France Football) : https://www.francefootball.fr/ballon-d-or/palmares/
+- Les articles d’actualité affichent leur source et leur lien ; les infos de blessures doivent être confirmées dans l’article et, si possible, auprès du club.
